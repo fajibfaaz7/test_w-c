@@ -52,7 +52,7 @@ $(".slider-nav-thumbnails .slick-slide").removeClass("slick-active");
 $(".slider-nav-thumbnails .slick-slide").eq(0).addClass("slick-active");
 
 // On before slide change match active thumbnail to current slide
-var slides = $(".slider_item img");
+var slides = $(".slider_item .image-holder img");
 $(".slider").on("beforeChange", function (
   event,
   slick,
@@ -60,8 +60,8 @@ $(".slider").on("beforeChange", function (
   nextSlide
 ) {
   var mySlideNumber = nextSlide;
-  //   slides.removeClass("animate__animated animate__slideInUp");
-  //   slides.eq(nextSlide).addClass("animate__animated animate__slideInUp");
+  slides.removeClass("animate__animated animate__slideInUp");
+  slides.eq(nextSlide).addClass("animate__animated animate__slideInUp");
   //   slides.eq(nextSlide + 1).addClass("animate__animated animate__bounce");
   $(".slider-nav-thumbnails .slick-slide").removeClass("slick-active");
   $(".slider-nav-thumbnails .slick-slide")
