@@ -272,6 +272,7 @@ nav {
 .slick-dots {
   display: flex;
   position: absolute;
+  left: -18px;
   bottom: 60px;
   color: grey;
 }
