@@ -1,6 +1,7 @@
 $(".slider").slick({
   slidesToShow: 1,
-  slidesToScroll: 0,
+  slidesToScroll: 1,
+  dots: true,
   arrows: false,
   fade: true,
   asNavFor: ".slider-nav-thumbnails",

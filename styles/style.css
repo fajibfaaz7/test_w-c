@@ -256,3 +256,33 @@ nav {
     transform: none;
   }
 }
+/* .slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+} */
+.slick-dots {
+  display: flex;
+  position: absolute;
+  bottom: 60px;
+  color: grey;
+}
+.slick-dots li {
+  padding: 12px;
+  width: 20px;
+  height: 20px;
+}
+.slick-dots li button {
+  display: none;
+}
+.slick-dots .slick-active {
+  color: #b2c91e;
+}
